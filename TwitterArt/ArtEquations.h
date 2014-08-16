@@ -57,4 +57,11 @@ FOUNDATION_EXPORT NSArray * const EquationNames;
 -(unsigned char)g5WithEntropy:(int)e column:(int)i row:(int)j;
 -(unsigned char)b5WithEntropy:(int)e column:(int)i row:(int)j;
 
+-(unsigned char)r6WithEntropy:(int)e column:(int)i row:(int)j;
+-(unsigned char)g6WithEntropy:(int)e column:(int)i row:(int)j;
+-(unsigned char)b6WithEntropy:(int)e column:(int)i row:(int)j;
+
+-(unsigned char)r7WithEntropy:(int)e column:(int)i row:(int)j;
+-(unsigned char)g7WithEntropy:(int)e column:(int)i row:(int)j;
+-(unsigned char)b7WithEntropy:(int)e column:(int)i row:(int)j;
 @end

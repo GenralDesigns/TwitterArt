@@ -61,7 +61,7 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="TwitterArt" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" appearanceType="aqua" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="TwitterArt - Milo Gosnell" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" appearanceType="aqua" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="0.0" y="0.0" width="1125" height="650"/>
@@ -84,9 +84,9 @@
                         </connections>
                     </button>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Nml-m8-aBt">
-                        <rect key="frame" x="15" y="34" width="614" height="599"/>
+                        <rect key="frame" x="15" y="34" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="ZPn-17-neD"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Plcehldr" id="ZPn-17-neD"/>
                     </imageView>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="gAb-yE-fpt">
                         <rect key="frame" x="654" y="550" width="472" height="83"/>
@@ -272,7 +272,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <popUpButtonCell key="cell" type="push" title="PNG" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="WQK-jS-NWK" id="JbM-0Z-1KD">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="system"/>
+                        <font key="font" metaFont="menu"/>
                         <menu key="menu" title="OtherViews" id="exW-SB-tfm">
                             <items>
                                 <menuItem title="PNG" state="on" id="WQK-jS-NWK"/>
@@ -285,4 +285,7 @@
             </subviews>
         </customView>
     </objects>
+    <resources>
+        <image name="Plcehldr" width="1024" height="1024"/>
+    </resources>
 </document>

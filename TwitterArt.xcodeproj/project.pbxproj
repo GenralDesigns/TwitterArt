@@ -18,6 +18,8 @@
 		2652EB6519977748000FCBF3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2652EB4419977748000FCBF3 /* Cocoa.framework */; };
 		2652EB6D19977748000FCBF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2652EB6B19977748000FCBF3 /* InfoPlist.strings */; };
 		2652EB6F19977748000FCBF3 /* TwitterArtTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2652EB6E19977748000FCBF3 /* TwitterArtTests.m */; };
+		26985C5A199F4D3D00F77C69 /* Icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 26985C59199F4D3D00F77C69 /* Icon.iconset */; };
+		26985C5C199F4F3D00F77C69 /* Plcehldr.png in Resources */ = {isa = PBXBuildFile; fileRef = 26985C5B199F4F3D00F77C69 /* Plcehldr.png */; };
 		26B2E987199BE7F600055796 /* TwitterTweets.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B2E986199BE7F600055796 /* TwitterTweets.m */; };
 		26B2E98C199C293500055796 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B2E98B199C293500055796 /* NSString+Extensions.m */; };
 		26BA9828199D82D2002E1654 /* ArtEquations.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26BA9827199D82D2002E1654 /* ArtEquations.mm */; };
@@ -54,6 +56,8 @@
 		2652EB6A19977748000FCBF3 /* TwitterArtTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwitterArtTests-Info.plist"; sourceTree = "<group>"; };
 		2652EB6C19977748000FCBF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2652EB6E19977748000FCBF3 /* TwitterArtTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterArtTests.m; sourceTree = "<group>"; };
+		26985C59199F4D3D00F77C69 /* Icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Icon.iconset; sourceTree = "<group>"; };
+		26985C5B199F4F3D00F77C69 /* Plcehldr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Plcehldr.png; sourceTree = "<group>"; };
 		26B2E985199BE7F600055796 /* TwitterTweets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterTweets.h; sourceTree = "<group>"; };
 		26B2E986199BE7F600055796 /* TwitterTweets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterTweets.m; sourceTree = "<group>"; };
 		26B2E988199BFC3900055796 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
@@ -130,6 +134,8 @@
 		2652EB4A19977748000FCBF3 /* TwitterArt */ = {
 			isa = PBXGroup;
 			children = (
+				26985C5B199F4F3D00F77C69 /* Plcehldr.png */,
+				26985C59199F4D3D00F77C69 /* Icon.iconset */,
 				2652EB5619977748000FCBF3 /* AppDelegate.h */,
 				2652EB5719977748000FCBF3 /* AppDelegate.m */,
 				2652EB5919977748000FCBF3 /* MainMenu.xib */,
@@ -252,9 +258,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2652EB4F19977748000FCBF3 /* InfoPlist.strings in Resources */,
+				26985C5A199F4D3D00F77C69 /* Icon.iconset in Resources */,
 				2652EB5D19977748000FCBF3 /* Images.xcassets in Resources */,
 				2652EB5519977748000FCBF3 /* Credits.rtf in Resources */,
 				2652EB5B19977748000FCBF3 /* MainMenu.xib in Resources */,
+				26985C5C199F4F3D00F77C69 /* Plcehldr.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +416,6 @@
 		2652EB7319977749000FCBF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TwitterArt/TwitterArt-Prefix.pch";
@@ -425,7 +432,6 @@
 		2652EB7419977749000FCBF3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TwitterArt/TwitterArt-Prefix.pch";

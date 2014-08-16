@@ -15,8 +15,6 @@
 #define _cb(x) abs((x)*(x)*(x))                    // absolute value of cube
 #define _cr(x) (unsigned char)(pow((x),1.0/3.0))   // cube root
 
-using namespace::std;
-
 #import "ArtEquations.h"
 
 /* 
@@ -29,9 +27,8 @@ using namespace::std;
  
 */
 
-int const NumberOfEquations = 5;
-NSArray * const EquationNames = @[@"Unicorns - Martin Büttner", @"Tablecloth - githubphagocyte", @"Triangle Squares - Jugale", @"Mandelbrot - Manuel Kasten", @"Spiral - xleviator"];
-
+int const NumberOfEquations = 7;
+NSArray * const EquationNames = @[@"Unicorns - Martin Büttner", @"Tablecloth - githubphagocyte", @"Triangle Squares - Jugale", @"Mandelbrot - Manuel Kasten", @"Spiral - xleviator", @"Voronoi - teh internets is made of catz", @"Cellular Automata - Sparr"];
 
 @implementation ArtEquations
 
@@ -122,6 +119,54 @@ NSArray * const EquationNames = @[@"Unicorns - Martin Büttner", @"Tablecloth - 
     int dist = sqrt(i*i + j*j);
     int makeSpiral = prc * e;
     return dist + makeSpiral;
+}
+
+
+-(unsigned char)r6WithEntropy:(int)f column:(int)i row:(int)j {
+    int t[64], k = 0, l, e, d = 2e7;
+    srand(f);
+    while (k < 64) {
+        t[k] = rand() % DIM;
+        if((e = _sq(i-t[k]) + _sq(j-t[42&k++])) < d) d=e,l=k;
+    }
+    return t[l];
+}
+
+-(unsigned char)g6WithEntropy:(int)f column:(int)i row:(int)j {
+    static int t[64];
+    int k = 0, l, e, d = 2e7;
+    while(k < 64) {
+        if(!t[k])t[k] = rand() % DIM;
+        if((e = _sq(i - t[k]) + _sq(j - t[42 & k++])) < d) d = e,l = k;
+    }
+    return t[l];
+
+}
+
+-(unsigned char)b6WithEntropy:(int)f column:(int)i row:(int)j {
+    static int t[64];
+    int k = 0, l = 0, e, d = 2e7;
+    while(k < 64) {
+        if(!t[k]) t[k] = rand() % DIM;
+        if((e = _sq(i - t[k]) + _sq(j - t[42 & k++])) < d) d = e, l = k;
+    }
+    return t[l];
+}
+
+
+-(unsigned char)r7WithEntropy:(int)f column:(int)i row:(int)j {
+    srand(f);
+    static char p[1024][1026],e=e?e:(rand()%DIM*f&254)|22;
+    return (p[j][i+1]=(j<1?i==512:(e&1<<(p[j-1][i]*4+p[j-1][i+1]*2+p[j-1][i+2]))>0))*DM1;
+}
+
+-(unsigned char)g7WithEntropy:(int)f column:(int)i row:(int)j {
+    static char p[1024][1026],e=e?e:(rand()%DIM*f&254)|22;
+    return (p[j][i+1]=(j<1?i==512:(e&1<<(p[j-1][i]*4+p[j-1][i+1]*2+p[j-1][i+2]))>0))*DM1;}
+
+-(unsigned char)b7WithEntropy:(int)f column:(int)i row:(int)j {
+    static char p[1024][1026],e=e?e:(rand()%DIM*f&254)|22;
+    return (p[j][i+1]=(j<1?i==512:(e&1<<(p[j-1][i]*4+p[j-1][i+1]*2+p[j-1][i+2]))>0))*DM1;
 }
 
 @end

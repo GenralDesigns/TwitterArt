@@ -81,7 +81,7 @@ NSString *timestamp;
 
 
 +(NSMutableArray *)getTweetParts:(NSString *)screenName {
-    
+    screenName = [screenName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];    
     NSMutableURLRequest *authReq = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://twitter.com/%@", screenName]]];
     [authReq setTimeoutInterval:15];
     NSData *d = [NSURLConnection sendSynchronousRequest:authReq returningResponse:nil error:nil];
