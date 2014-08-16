@@ -18,6 +18,10 @@
 		2652EB6519977748000FCBF3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2652EB4419977748000FCBF3 /* Cocoa.framework */; };
 		2652EB6D19977748000FCBF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2652EB6B19977748000FCBF3 /* InfoPlist.strings */; };
 		2652EB6F19977748000FCBF3 /* TwitterArtTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2652EB6E19977748000FCBF3 /* TwitterArtTests.m */; };
+		26B2E987199BE7F600055796 /* TwitterTweets.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B2E986199BE7F600055796 /* TwitterTweets.m */; };
+		26B2E98C199C293500055796 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B2E98B199C293500055796 /* NSString+Extensions.m */; };
+		26BA9828199D82D2002E1654 /* ArtEquations.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26BA9827199D82D2002E1654 /* ArtEquations.mm */; };
+		26BA982E199D86F9002E1654 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26BA982D199D86F9002E1654 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +46,7 @@
 		2652EB5219977748000FCBF3 /* TwitterArt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwitterArt-Prefix.pch"; sourceTree = "<group>"; };
 		2652EB5419977748000FCBF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2652EB5619977748000FCBF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2652EB5719977748000FCBF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2652EB5719977748000FCBF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		2652EB5A19977748000FCBF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2652EB5C19977748000FCBF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2652EB6219977748000FCBF3 /* TwitterArtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterArtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +54,14 @@
 		2652EB6A19977748000FCBF3 /* TwitterArtTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwitterArtTests-Info.plist"; sourceTree = "<group>"; };
 		2652EB6C19977748000FCBF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2652EB6E19977748000FCBF3 /* TwitterArtTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterArtTests.m; sourceTree = "<group>"; };
+		26B2E985199BE7F600055796 /* TwitterTweets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterTweets.h; sourceTree = "<group>"; };
+		26B2E986199BE7F600055796 /* TwitterTweets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterTweets.m; sourceTree = "<group>"; };
+		26B2E988199BFC3900055796 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
+		26B2E98A199C293500055796 /* NSString+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
+		26B2E98B199C293500055796 /* NSString+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extensions.m"; sourceTree = "<group>"; };
+		26BA9826199D82D2002E1654 /* ArtEquations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ArtEquations.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		26BA9827199D82D2002E1654 /* ArtEquations.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = ArtEquations.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		26BA982D199D86F9002E1654 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26BA982E199D86F9002E1654 /* CoreGraphics.framework in Frameworks */,
 				2652EB4519977748000FCBF3 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +108,8 @@
 		2652EB4319977748000FCBF3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26BA982D199D86F9002E1654 /* CoreGraphics.framework */,
+				26B2E988199BFC3900055796 /* libcommonCrypto.dylib */,
 				2652EB4419977748000FCBF3 /* Cocoa.framework */,
 				2652EB6319977748000FCBF3 /* XCTest.framework */,
 				2652EB4619977748000FCBF3 /* Other Frameworks */,
@@ -120,6 +135,12 @@
 				2652EB5919977748000FCBF3 /* MainMenu.xib */,
 				2652EB5C19977748000FCBF3 /* Images.xcassets */,
 				2652EB4B19977748000FCBF3 /* Supporting Files */,
+				26B2E985199BE7F600055796 /* TwitterTweets.h */,
+				26B2E986199BE7F600055796 /* TwitterTweets.m */,
+				26B2E98A199C293500055796 /* NSString+Extensions.h */,
+				26B2E98B199C293500055796 /* NSString+Extensions.m */,
+				26BA9826199D82D2002E1654 /* ArtEquations.h */,
+				26BA9827199D82D2002E1654 /* ArtEquations.mm */,
 			);
 			path = TwitterArt;
 			sourceTree = "<group>";
@@ -253,7 +274,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2652EB5819977748000FCBF3 /* AppDelegate.m in Sources */,
+				26BA9828199D82D2002E1654 /* ArtEquations.mm in Sources */,
 				2652EB5119977748000FCBF3 /* main.m in Sources */,
+				26B2E987199BE7F600055796 /* TwitterTweets.m in Sources */,
+				26B2E98C199C293500055796 /* NSString+Extensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,8 +339,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -343,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -353,8 +377,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -376,7 +400,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -389,6 +413,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TwitterArt/TwitterArt-Prefix.pch";
 				INFOPLIST_FILE = "TwitterArt/TwitterArt-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -402,6 +430,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TwitterArt/TwitterArt-Prefix.pch";
 				INFOPLIST_FILE = "TwitterArt/TwitterArt-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -466,6 +498,7 @@
 				2652EB7419977749000FCBF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2652EB7519977749000FCBF3 /* Build configuration list for PBXNativeTarget "TwitterArtTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +507,7 @@
 				2652EB7719977749000FCBF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
