@@ -19,9 +19,12 @@
 
 /* 
  Set the number of RGB equations here (not the total number of equations, i.e. the max number of the y part of the method name
- Also add the name of the equation to the array defined below. The format is @"equationName", for each equation name. Follow the format as defined below.
+ Also add the name of the equation to the array defined below. The format is @"equationName", for each equation name.
+ Follow the format as defined below.
  
- This file is entirely C++ compatible so feel free to use any C++ code you want in the functions. This language is technically Objective-C++ which links with ObjC so I can use the method definitions below. This allows to call the methods dynamically by string which allows for randomness and easier integration with this Cocoa app.
+ This file is entirely C++ compatible so feel free to use any C++ code you want in the functions. This language is
+     technically Objective-C++ which links with ObjC so I can use the method definitions below. This allows to call the 
+     methods dynamically by string which allows for randomness and easier integration with this Cocoa app.
  
  NOTE! This uses the LLVM 5.1 compiler. C++ compiles with the option -std=c++11
  

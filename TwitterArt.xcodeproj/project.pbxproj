@@ -90,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		260FC176199F8865007B5AC3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				26B2E98A199C293500055796 /* NSString+Extensions.h */,
+				26B2E98B199C293500055796 /* NSString+Extensions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		2652EB3819977747000FCBF3 = {
 			isa = PBXGroup;
 			children = (
@@ -134,19 +143,14 @@
 		2652EB4A19977748000FCBF3 /* TwitterArt */ = {
 			isa = PBXGroup;
 			children = (
-				26985C5B199F4F3D00F77C69 /* Plcehldr.png */,
-				26985C59199F4D3D00F77C69 /* Icon.iconset */,
 				2652EB5619977748000FCBF3 /* AppDelegate.h */,
 				2652EB5719977748000FCBF3 /* AppDelegate.m */,
-				2652EB5919977748000FCBF3 /* MainMenu.xib */,
-				2652EB5C19977748000FCBF3 /* Images.xcassets */,
-				2652EB4B19977748000FCBF3 /* Supporting Files */,
 				26B2E985199BE7F600055796 /* TwitterTweets.h */,
 				26B2E986199BE7F600055796 /* TwitterTweets.m */,
-				26B2E98A199C293500055796 /* NSString+Extensions.h */,
-				26B2E98B199C293500055796 /* NSString+Extensions.m */,
 				26BA9826199D82D2002E1654 /* ArtEquations.h */,
 				26BA9827199D82D2002E1654 /* ArtEquations.mm */,
+				260FC176199F8865007B5AC3 /* Categories */,
+				2652EB4B19977748000FCBF3 /* Supporting Files */,
 			);
 			path = TwitterArt;
 			sourceTree = "<group>";
@@ -154,6 +158,10 @@
 		2652EB4B19977748000FCBF3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				26985C5B199F4F3D00F77C69 /* Plcehldr.png */,
+				26985C59199F4D3D00F77C69 /* Icon.iconset */,
+				2652EB5919977748000FCBF3 /* MainMenu.xib */,
+				2652EB5C19977748000FCBF3 /* Images.xcassets */,
 				2652EB4C19977748000FCBF3 /* TwitterArt-Info.plist */,
 				2652EB4D19977748000FCBF3 /* InfoPlist.strings */,
 				2652EB5019977748000FCBF3 /* main.m */,
